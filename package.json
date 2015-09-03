@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cajoy/nanopay-tools"
+    "url": "https://github.com/nanoPayinc/nanopay-tools"
   },
   "main": "index.js",
   "dependencies": {
