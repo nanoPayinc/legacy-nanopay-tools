@@ -1,6 +1,6 @@
 {
   "name": "nanopay-tools",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Nanopay tools",
   "keywords": [
     "console",
@@ -20,14 +20,10 @@
     "url": "https://github.com/strongloop/nanopay-tools/issues"
   },
   "homepage": "https://github.com/strongloop/nanopay-tools",
-  "_npmUser": {
-    "name": "cajoy",
-    "email": "cajoy.dev@gmail.com"
-  },
   "maintainers": [
     {
-      "name": "cajoy",
-      "email": "cajoy.dev@gmail.com"
+      "name": "nanoPay",
+      "email": "info@nanopay.net"
     }
   ],
   "devDependencies": {
@@ -36,10 +32,6 @@
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/_mocha test/**/*.js --colors --reporter spec"
-  },
-  "author": {
-    "name": "Alex Struc",
-    "email": "cajoy.dev@gmail.com"
   },
   "license": "ISC",
   "readme": "Tools for node.js apps\n",
