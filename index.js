@@ -10,7 +10,7 @@
 var $promise = require('bluebird');
 
 var cls = {};
-var defaultRemotesList = ['create', 'upsert', 'exists', 'updateAll', 'findById', 'find', 'findOne', 'deleteById', 'count', 'prototype.updateAttributes', 'prototype.updateAttribute', 'createChangeStream'];
+var defaultRemotesList = ['create', 'upsert', 'exists', 'updateAll', 'updateById', 'findById', 'find', 'findOne', 'deleteById', 'count', 'prototype.updateAttributes', 'prototype.updateAttribute', 'createChangeStream'];
 
 cls.polymorph = function (func) {
   return function () {
