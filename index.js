@@ -10,7 +10,24 @@
 var $promise = require('bluebird');
 
 var cls = {};
-var defaultRemotesList = ['create', 'upsert', 'exists', 'updateAll', 'updateById', 'findById', 'find', 'findOne', 'deleteById', 'count', 'prototype.updateAttributes', 'prototype.updateAttribute', 'createChangeStream'];
+var defaultRemotesList = [
+  'create',
+  'upsert',
+  'exists',
+  'updateAll',
+  'updateById',
+  'findById',
+  'find',
+  'findOne',
+  'deleteById',
+  'count',
+  'prototype.updateAttributes',
+  'prototype.updateAttribute',
+  'createChangeStream',
+  'replaceById',
+  'replaceOrCreate',
+  'upsertWithWhere'
+];
 
 cls.polymorph = function (func) {
   return function () {
@@ -42,7 +59,7 @@ cls.extendDocs = function (model, method, doc) {
 cls.disableAllMethods = function(model, methodsToExpose)
 {
     // credit to https://github.com/ericprieto for this function
-    
+
     if(model && model.sharedClass)
     {
         methodsToExpose = methodsToExpose || [];
